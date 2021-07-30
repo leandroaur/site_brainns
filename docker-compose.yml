@@ -1,0 +1,11 @@
+version: '2'
+services:
+  website:
+   build:
+    context: .
+   ports:
+    - 80:80
+  unit-tests:
+    build:
+      dockerfile: rspec.dockerfile
+      context: .
