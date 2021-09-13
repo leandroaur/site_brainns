@@ -5,3 +5,4 @@ jenkins_home/
 main.tf
 terraform.Dockerfile
 terraform.tfstate
+docker-compose2.yml
