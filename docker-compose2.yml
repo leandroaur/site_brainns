@@ -15,6 +15,7 @@ services:
       AWS_ACCESS_KEY_ID: AKIAYI653BBOBJA4Q6NL
       AWS_SECRET_ACCESS_KEY: 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
       AWS_REGION: sa-east-1
+      AWS_DEFAULT_REGION: sa-east-1
     volumes:
       - $PWD:/app
     working_dir: /app    
@@ -26,6 +27,7 @@ services:
       AWS_ACCESS_KEY_ID: AKIAYI653BBOBJA4Q6NL
       AWS_SECRET_ACCESS_KEY: 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
       AWS_REGION: sa-east-1
+      AWS_DEFAULT_REGION: sa-east-1
     volumes:
       - $PWD:/app
     working_dir: /app
@@ -34,6 +36,18 @@ services:
     ports:
       - 4444:4444
       - 5900:5900
+  integration-tests:
+    environment:
+      SELENIUM_HOST: selenium
+      SELENIUM_PORT: 4444
+    volumes:
+      - "$PWD:/app"
+    build:
+      context: .
+      dockerfile: rspec.dockerfile
+    command:
+      - --pattern
+      - /app/spec/integration/*_spec.rb
   website:
    build:
     context: .
