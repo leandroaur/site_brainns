@@ -1,0 +1,14 @@
+.terraform/
+jenkins.Dockerfile
+jenkins_home/
+main.tf
+terraform.Dockerfile
+terraform.tfstate
+docker-compose2.yml
+terraform.tfstate.backup
+scripts/
+plugins.txt
+integration/
+rspec.dockerfile
+spec
+unit/
