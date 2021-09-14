@@ -1,5 +1,4 @@
 .terraform/
-Jenkinsfile
 jenkins.Dockerfile
 jenkins_home/
 main.tf
