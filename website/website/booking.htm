@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Brain Network Solutions</title>
+<title>A little about us...</title>
 <meta name="description" content="A lynda.com example of HTML5 and CSS3">
 <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
@@ -18,30 +18,30 @@
 <script src="_scripts/jquery-ui-1.8.10.custom.min.js"></script>
 <script src="_scripts/menus.js"></script>
 </head>
-<body id="home" class="no-js">
+<body class="no-js">
 <div id="wrapper">
   <header id="mainHeader"> <a href="index.htm" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div>
-    <h1>Brain Network Solutions</h1>
+    <div id="logo">
+    <h1>Explore California</h1>
     </div>
     </a>
     <nav id="siteNav">
-      <h1>BrainNS - Wise Solution for your Business</h1>
+      <h1>Where do you want to go?</h1>
       <ul>
-       <li><a href="tours.htm" title="Our tours">About us <br /><span class="tagline">follow our bliss</span></a>
+       <li><a href="tours.htm" title="Our tours">Tours <br /><span class="tagline">follow our bliss</span></a>
           <ul>
-            <li><a href="tours.htm" title="Our tours">Our history</a></li>
-            <li><a href="tours.htm" title="find tours">Clients</a></li>
-            <li><a href="tours.htm" title="find tours">Solutions</a></li>
-            <li><a href="tours.htm" title="find tours">Study Case</a></li>
+            <li><a href="tours.htm" title="Our tours">All Tours</a></li>
+            <li><a href="tours.htm" title="find tours">Tours by Activity</a></li>
+            <li><a href="tours.htm" title="find tours">Tours by Region</a></li>
+            <li><a href="tours.htm" title="find tours">Tour Finder</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
         <li><a href="resources.htm" title="planning resources">Resources <br /><span class="tagline">plan your trip</span></a>
           <ul>
-            <li><a href="resources/faq.htm" title="Got questions?">BrainNS FAQs</a></li>
-            <li><a href="resources/additional_resources.htm" title="additional resources">Additional Information</a></li>
+            <li><a href="resources/faq.htm" title="Got questions?">Tour FAQs</a></li>
+            <li><a href="resources/additional_resources.htm" title="additional resources">Tour Information</a></li>
             <li><a href="resources/terms.htm" title="terms and conditions">Site Terms</a></li>
           </ul>
         </li>
@@ -52,7 +52,7 @@
             <li><a href="explorers/gallery.htm" title="contributor photos">Tour Photos</a></li>
           </ul>
         </li>
-        <li><a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">we're listening</span></a>
+        <li><a href="contact.htm" title="contact us" class="current">Contact <br /><span class="tagline">we're listening</span></a>
           <ul>
             <li><a href="support.htm" title="need help?">Support</a></li>
           </ul>
@@ -60,22 +60,62 @@
       </ul>
     </nav>
   </header>
-  <section id="actionCall">
-  <h1>BrainNS</h1>
-  <a href="tours.htm" title="Check out our services"><h2>Check out our services</h2></a>
-  </section>
-  <div id="contentWrapper">
   <section id="mainContent">
- <article id="mainArticle"> 
- <h1>Tour Spotlight</h1>
-  <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'll find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.htm" title="Cycle California">tour details</a></span></p>
-  <h1>Explorer's Podcast</h1>
-
-  Removed to keep file size small :)
-  </article>
-  </section>
+  <header id="contentHeader" class="hasCrumbs">
+  <h1>Contact Us</h1>
+  <div id="subLinks">
+  		<ul>
+            <li><a href="support.htm" title="need help?">Support</a></li>
+          </ul>
+      </div>
+  </header>
+ <article id="mainArticle"> <h1>Booking</h1>
+ <img src="_images/emerald_bay.jpg" alt="Beautiful Lake Tahoe" class="articleImage" />
+ <div class="multiCol">
+   <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal tours,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive tours (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well. </p>
+   <h2>Support options</h2>
+   <p>If you're currently on a tour and need support, please visit our <a href="support.htm">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
+</div>
+<form asp-controller="Booking" asp-action="Book" method="post">
+  <fieldset id="personalInfo">
+      <legend><strong>Personal Information</strong></legend>
+      <input type="hidden" value="@Model.TourName" id="tourname" name="tourname"/>
+      <p>
+          <label for="name">Name</label>
+          <input name="name" 
+                 type="text" 
+                 class="text" 
+                 id="name" 
+                 tabindex="100" 
+                 placeholder="first and last name" 
+                 required>
+      </p>
+      <p>
+          <label for="email">Email</label>
+          <input name="email" 
+                 type="email" 
+                 class="text" 
+                 id="email" 
+                 tabindex="110" 
+                 placeholder="valid email address" 
+                 required>
+      </p>
+      <p>
+          <label for="transport">I also need transport</label>
+          <input name="transport"
+                 type="checkbox"
+                 id="transport"
+                 tabindex="120"/>
+      </p>
+      <p>
+          <input type="submit" name="submit2" id="submit2" value="Book" tabindex="300">
+      </p>
+  </fieldset>
+</form>
+ </article>
+ </section>
   <aside id="secondaryContent">
-  <div id="specials">
+  <div id="specials" class="callOut">
         <h1>Monthly Specials</h1>
         <h2 class="top"><img src="_images/calm_bug.gif" alt="California Calm" width="75" height="75" />California Calm</h2>
         <p>Day Spa Package <br />
@@ -90,10 +130,11 @@
         <p>Tapas &amp; Groves <br />
           <a href="tours/tour_detail_taste.htm">$150</a></p>
       </div>
+      <div id="trivia" class="callOut">
         <h1>Did You Know?</h1>
-        <p>The official state flag of California was designed by William Todd and first used on June 14, 1846. The flag was not officially adopted until 1911. The flag features a grizzly bear, a red bar, a star and is one of the most recognizable state flags in the Nation.</p>
+          <p>California is home to many natural hot springs, which contain a high mineral content that is considered therapeutic. Calistoga is probably our most famous example but many day spas have hot tubs and water treatments that mimic these conditions.</p>
+        </div>
   </aside>
-  </div>
   <footer id="pageFooter">
   <section id="quickLinks">
   <h1>Quick Nav</h1>
@@ -105,7 +146,7 @@
       <li><a href="explorers.htm" title="Join our community">Explorers</a></li>
       <li><a href="contact.htm" title="Contact and support">Contact</a></li>
     </ul>
-  </section>
+    </section>
   <section id="footerResources">
   <h1>Resources</h1>
     <ul id="quickNav">

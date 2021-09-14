@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Brain Network Solutions</title>
+<title>A little about us...</title>
 <meta name="description" content="A lynda.com example of HTML5 and CSS3">
 <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
@@ -18,34 +18,34 @@
 <script src="_scripts/jquery-ui-1.8.10.custom.min.js"></script>
 <script src="_scripts/menus.js"></script>
 </head>
-<body id="home" class="no-js">
+<body class="no-js">
 <div id="wrapper">
   <header id="mainHeader"> <a href="index.htm" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div>
-    <h1>Brain Network Solutions</h1>
+    <div id="logo">
+    <h1>Explore California</h1>
     </div>
     </a>
     <nav id="siteNav">
-      <h1>BrainNS - Wise Solution for your Business</h1>
+      <h1>Where do you want to go?</h1>
       <ul>
-       <li><a href="tours.htm" title="Our tours">About us <br /><span class="tagline">follow our bliss</span></a>
+       <li><a href="tours.htm" title="Our tours">Tours <br /><span class="tagline">follow our bliss</span></a>
           <ul>
-            <li><a href="tours.htm" title="Our tours">Our history</a></li>
-            <li><a href="tours.htm" title="find tours">Clients</a></li>
-            <li><a href="tours.htm" title="find tours">Solutions</a></li>
-            <li><a href="tours.htm" title="find tours">Study Case</a></li>
+            <li><a href="tours.htm" title="Our tours">All Tours</a></li>
+            <li><a href="tours.htm" title="find tours">Tours by Activity</a></li>
+            <li><a href="tours.htm" title="find tours">Tours by Region</a></li>
+            <li><a href="tours.htm" title="find tours">Tour Finder</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
         <li><a href="resources.htm" title="planning resources">Resources <br /><span class="tagline">plan your trip</span></a>
           <ul>
-            <li><a href="resources/faq.htm" title="Got questions?">BrainNS FAQs</a></li>
-            <li><a href="resources/additional_resources.htm" title="additional resources">Additional Information</a></li>
+            <li><a href="resources/faq.htm" title="Got questions?">Tour FAQs</a></li>
+            <li><a href="resources/additional_resources.htm" title="additional resources">Tour Information</a></li>
             <li><a href="resources/terms.htm" title="terms and conditions">Site Terms</a></li>
           </ul>
         </li>
-        <li><a href="explorers.htm" title="Our community">Explorers <br /><span class="tagline">join our community</span></a>
+        <li><a href="explorers.htm" title="Our community" class="current">Explorers <br /><span class="tagline">join our community</span></a>
           <ul>
             <li><a href="explorers/join.htm" title="join our community">Join the Explorers</a></li>
             <li><a href="blog/index.htm" title="read our blog!">Read our Blog</a></li>
@@ -60,22 +60,32 @@
       </ul>
     </nav>
   </header>
-  <section id="actionCall">
-  <h1>BrainNS</h1>
-  <a href="tours.htm" title="Check out our services"><h2>Check out our services</h2></a>
-  </section>
-  <div id="contentWrapper">
   <section id="mainContent">
- <article id="mainArticle"> 
- <h1>Tour Spotlight</h1>
-  <p class="spotlight">This month's spotlight package is Cycle California. Whether you are looking for some serious downhill thrills to a relaxing ride along the coast, you'll find something to love in Cycle California.<br /> <span class="accent"><a href="tours_cycle.htm" title="Cycle California">tour details</a></span></p>
-  <h1>Explorer's Podcast</h1>
-
-  Removed to keep file size small :)
-  </article>
-  </section>
+  <header id="contentHeader" class="hasCrumbs">
+  <h1>The Explorers</h1>
+  <div id="subLinks">
+           <ul>
+            <li><a href="explorers/join.htm" title="join our community">Join the Explorers</a></li>
+            <li><a href="blog/index.htm" title="read our blog!"> Blog</a></li>
+            <li><a href="explorers/gallery.htm" title="contributor photos">Tour Photos</a></li>
+          </ul>
+      </div>
+  </header>
+ <article id="mainArticle"> <h1>Come make a few friends</h1>
+ <img src="_images/bikes.jpg" alt="Come join us!" class="articleImage" />
+ <div class="multiCol"> <p>The Explorers are a community of people who love to travel, love California, and want to share their journeys and experiences with others. Joining is free, so if you haven't signed up yet, <a href="explorers/join.htm">do so now!</a></p>
+   <p>Joining up will make you eligible for discounts, extra tour goodies, exclusive side excursions, and other super-secret fun stuff! It's also a great way of making friends. We have Explorers-only gatherings where you can meet, mingle, and form friendships with other touring enthusisasts!</p>
+   <p>Best of all...joining is absolutely free!</p>
+   <h2>So...what can you do?</h2>
+   <p>When you sign up, you'll be able to write articles for our <a href="http://www.explorecalifornia.org/blog">blog</a>, submit your photos in the <a href="explorers/gallery.htm">photo gallery</a>, and you'll receive special members-only deals on all upcoming Explore California tours! You also get priority seating and quick check-in! Heck, if you go on enough tours, we might even have you guide a few for us!</p>
+   <p>If you're going to one of our overnight tours, you'll receive a special hospitality gift when you check into your hotel. We also make sure that you're always booked for late checkout. How's that for cool?</p>
+   <h2>One more thing...</h2>
+   <p>Oh yeah, one more thing... once you join you'll receive our super-secret decoder ring (no kidding)! On many of our tours, your decoder ring can be used to unlock cool new trails or Explore California goodie packs!</p>
+ </div>
+ </article>
+ </section>
   <aside id="secondaryContent">
-  <div id="specials">
+  <div id="specials" class="callOut">
         <h1>Monthly Specials</h1>
         <h2 class="top"><img src="_images/calm_bug.gif" alt="California Calm" width="75" height="75" />California Calm</h2>
         <p>Day Spa Package <br />
@@ -90,10 +100,11 @@
         <p>Tapas &amp; Groves <br />
           <a href="tours/tour_detail_taste.htm">$150</a></p>
       </div>
+      <div id="trivia" class="callOut">
         <h1>Did You Know?</h1>
-        <p>The official state flag of California was designed by William Todd and first used on June 14, 1846. The flag was not officially adopted until 1911. The flag features a grizzly bear, a red bar, a star and is one of the most recognizable state flags in the Nation.</p>
+        <p>California produces over 17 million gallons of wine each year!</p>
+        </div>
   </aside>
-  </div>
   <footer id="pageFooter">
   <section id="quickLinks">
   <h1>Quick Nav</h1>
@@ -105,7 +116,7 @@
       <li><a href="explorers.htm" title="Join our community">Explorers</a></li>
       <li><a href="contact.htm" title="Contact and support">Contact</a></li>
     </ul>
-  </section>
+    </section>
   <section id="footerResources">
   <h1>Resources</h1>
     <ul id="quickNav">
